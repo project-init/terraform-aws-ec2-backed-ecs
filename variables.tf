@@ -1,0 +1,38 @@
+variable "environment" {
+  type        = string
+  description = "The name of the environment to produce the cluster in."
+}
+
+variable "vpc_id" {
+  type        = string
+  description = "The VPC ID."
+}
+
+variable "subnets" {
+  type        = list(string)
+  description = "The subnets the cluster will go in to."
+}
+
+variable "instance_type" {
+  type        = string
+  default     = "c7g.medium"
+  description = "The instance type to use for the instances in the cluster."
+}
+
+variable "minimum_asg_size" {
+  type        = number
+  default     = 1
+  description = "The minimum number of ec2 instances to have in the cluster."
+}
+
+variable "maximum_asg_size" {
+  type        = number
+  default     = 1
+  description = "The maximum number of ecs instances to have in the cluster."
+}
+
+variable "container_insights_enabled" {
+  type        = bool
+  default     = false
+  description = "Whether to enable container level insights."
+}
