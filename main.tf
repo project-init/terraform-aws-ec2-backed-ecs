@@ -3,6 +3,7 @@ locals {
   ecs_cluster_full_name = "${var.environment}-${local.ecs_cluster_name}"
 }
 
+
 # EC2
 
 data "aws_ssm_parameter" "ecs_node_ami" {
