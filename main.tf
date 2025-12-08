@@ -105,7 +105,7 @@ module "label" {
 
 module "ecs_cluster" {
   source  = "cloudposse/ecs-cluster/aws"
-  version = "v1.2.0"
+  version = "2.0.0"
 
   container_insights_enabled = var.container_insights_enabled
   capacity_providers_fargate = false
