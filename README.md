@@ -32,7 +32,7 @@ Check our [Examples](examples) for full usage information.
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_ecs_cluster"></a> [ecs\_cluster](#module\_ecs\_cluster) | cloudposse/ecs-cluster/aws | v1.2.0 |
+| <a name="module_ecs_cluster"></a> [ecs\_cluster](#module\_ecs\_cluster) | cloudposse/ecs-cluster/aws | 2.0.0 |
 | <a name="module_label"></a> [label](#module\_label) | cloudposse/label/null | 0.25.0 |
 
 ## Resources
@@ -55,7 +55,7 @@ Check our [Examples](examples) for full usage information.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_container_insights_enabled"></a> [container\_insights\_enabled](#input\_container\_insights\_enabled) | Whether to enable container level insights. | `bool` | `false` | no |
+| <a name="input_container_insights_mode"></a> [container\_insights\_mode](#input\_container\_insights\_mode) | Level of container insights to have. | `string` | `"disabled"` | no |
 | <a name="input_environment"></a> [environment](#input\_environment) | The name of the environment to produce the cluster in. | `string` | n/a | yes |
 | <a name="input_instance_type"></a> [instance\_type](#input\_instance\_type) | The instance type to use for the instances in the cluster. | `string` | `"c7g.medium"` | no |
 | <a name="input_maximum_asg_size"></a> [maximum\_asg\_size](#input\_maximum\_asg\_size) | The maximum number of ecs instances to have in the cluster. | `number` | `1` | no |
@@ -65,8 +65,5 @@ Check our [Examples](examples) for full usage information.
 
 ## Outputs
 
-| Name | Description |
-|------|-------------|
-| <a name="output_acm_certificate_arn"></a> [acm\_certificate\_arn](#output\_acm\_certificate\_arn) | The ARN of the ACM Certificate created for the Subdomain. |
-| <a name="output_zone_id"></a> [zone\_id](#output\_zone\_id) | The id of the route53 zone created for the subdomain. |
+No outputs.
 <!-- END_TF_DOCS -->

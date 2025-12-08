@@ -31,8 +31,13 @@ variable "maximum_asg_size" {
   description = "The maximum number of ecs instances to have in the cluster."
 }
 
-variable "container_insights_enabled" {
-  type        = bool
-  default     = false
-  description = "Whether to enable container level insights."
+variable "container_insights_mode" {
+  type        = string
+  default     = "disabled"
+  description = "Level of container insights to have."
+
+  validation {
+    condition     = contains(["disabled", "enabled", "enhanced"], var.container_insights_mode)
+    error_message = "container_insights_mode must be disabled, enabled, or enhanced."
+  }
 }
