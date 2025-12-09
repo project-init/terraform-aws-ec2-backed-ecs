@@ -65,5 +65,11 @@ Check our [Examples](examples) for full usage information.
 
 ## Outputs
 
-No outputs.
+| Name | Description |
+|------|-------------|
+| <a name="output_ecs_cluster_arn"></a> [ecs\_cluster\_arn](#output\_ecs\_cluster\_arn) | ECS cluster ARN |
+| <a name="output_ecs_cluster_capacity_provider"></a> [ecs\_cluster\_capacity\_provider](#output\_ecs\_cluster\_capacity\_provider) | Name of the Capacity Provider for the ECS Cluster. |
+| <a name="output_ecs_cluster_id"></a> [ecs\_cluster\_id](#output\_ecs\_cluster\_id) | ECS cluster id |
+| <a name="output_ecs_cluster_name"></a> [ecs\_cluster\_name](#output\_ecs\_cluster\_name) | ECS cluster name |
+| <a name="output_ecs_cluster_role_name"></a> [ecs\_cluster\_role\_name](#output\_ecs\_cluster\_role\_name) | IAM role name |
 <!-- END_TF_DOCS -->
